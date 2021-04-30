@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Covid-19-Vaccine-Survey</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <h1 id="title">Covid-19-Vaccine-Survey</h1>
+        <p id="description">Thank you for helping us save lives!</p>
+      </header>
+      <form id="survey-form" action="survey">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            class="survey-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="survey-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" id="number-label">Age</label
+          ><input
+            type="number"
+            id="number"
+            name="age"
+            placeholder="Age"
+            min="10"
+            max="100"
+            class="survey-control"
+            required
+          />
+        </div>
+        <div class="form_group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="dropdown" class="survey-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="empFull">
+              Employed full time(40+ hours a week)
+            </option>
+            <option value="empPart">
+              Employed part-time(Less than 40 hours a week)
+            </option>
+            <option value="unWork">
+              Unemployed(Currently looking for work)
+            </option>
+            <option value="unNoWork">
+              Unemployed(Not currently looking for work)
+            </option>
+            <option value="student">Student</option>
+            <option value="retired">Retired</option>
+            <option value="selfE">Self-employed</option>
+            <option value="disabled">Disabled</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Are you going to get the covid vaccine?</p>
+          <label for="yes">
+            <input
+              type="radio"
+              name="name"
+              id="yes"
+              value="yes"
+              class="radio-label"
+              checked
+              required
+            />
+            Yes</label
+          >
+          <label for="no">
+            <input
+              type="radio"
+              name="name"
+              id="no"
+              value="no"
+              class="radio-label"
+            />
+            No</label
+          >
+          <label for="already-received">
+            <input
+              type="radio"
+              name="name"
+              id="already-received"
+              value="already-received"
+              class="radio-label"
+            />
+            Already vaccinated</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Which covid vaccine would you prefer to receive?</p>
+          <select
+            name="vaccine-type"
+            id="vaccine-type"
+            class="survey-control"
+            required
+          >
+            <option disabled selected value>Select a vaccine</option>
+            <option value="pfizer">Pfizer-BioNTech</option>
+            <option value="moderna">Moderna</option>
+            <option value="jjj">Johnson & Johnson’s Janssen</option>
+            <option value="astra">AstraZeneca-University of Oxford</option>
+            <option value="sputnik">Sputnik V</option>
+            <option value="other">
+              Other(Please let us know your choice in the box below)
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What are some of your concerns regarding the current covid
+            vaccines?<span class="optional"
+              >(Please select all that apply)</span
+            >
+          </p>
+          <label for="safety">
+            <input
+              type="checkbox"
+              name="vacation_activities"
+              id="safety"
+              value="safety"
+              class="checkbox-label"
+            />Vaccine safety.
+          </label>
+          <label for="speed">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="speed"
+              value="speed"
+              class="checkbox-label"
+            />Speed development.
+          </label>
+          <label for="sideEffects">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="sideEffects"
+              value="sideEffects"
+              class="checkbox-label"
+            />Side-effects.
+          </label>
+          <label for="options">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="options"
+              value="options"
+              class="checkbox-label"
+            />Too many options.
+          </label>
+          <label for="efficiency">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="efficiency"
+              value="efficiency"
+              class="checkbox-label"
+            />Immunity efficiency.
+          </label>
+          <label for="unknown">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="unknown"
+              value="unknown"
+              class="checkbox-label"
+            />Unknown side-effects.</label
+          >
+          <label for="honesty">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="honesty"
+              value="honesty"
+              class="checkbox-label"
+            />Honesty.</label
+          >
+          <label for="5g">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="5g"
+              value="5g"
+              class="checkbox-label"
+            />5G.</label
+          >
+          <label for="death">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="death"
+              value="death"
+              class="checkbox-label"
+            />Death.</label
+          >
+          <label for="microchip">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="microchip"
+              value="microchip"
+              class="checkbox-label"
+            />Microchip tracker.</label
+          >
+          <label for="recovery">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="recovery"
+              value="recovery"
+              class="checkbox-label"
+            />Recovery rate.</label
+          >
+          <label for="dose">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="dose"
+              value="dose"
+              class="checkbox-label"
+            />Dose uncertainty.</label
+          >
+          <label for="china">
+            <input
+              type="checkbox"
+              name="vacation-activities"
+              id="china"
+              value="china"
+              class="checkbox-label"
+            />China.
+          </label>
+          <label for="dna">
+            <input
+              type="checkbox"
+              name="vacation_activities"
+              id="dna"
+              value="dna"
+              class="checkbox-label"
+            />Altered DNA.
+          </label>
+          <label for="other">
+            <input
+              type="checkbox"
+              name=""
+              id="other"
+              value="other"
+              class="checkbox-label"
+            />Other.
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any additional comments, questions, or concerns?</p>
+          <textarea
+            name="vacation-information"
+            id="textarea"
+            class="textarea-label"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
